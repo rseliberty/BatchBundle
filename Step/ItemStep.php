@@ -213,7 +213,7 @@ class ItemStep extends AbstractStep
             }
         }
 
-        if (count($itemsToWrite) > 0) {
+        if (count($itemsToWrite) >= 0) {
             $this->write($itemsToWrite);
         }
         $this->flushStepElements();
